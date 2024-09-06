@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Данные из Excel</title>
+    <link rel="stylesheet" href="font-css.css" />
+    <style>
+      body {
+        margin: 20px;
+        background-image: url("14885.jpg");
+        background-repeat: repeat; /* предотвращает повтор изображения по горизонтали и вертикали */
+        background-size: cover; /* масштабирует изображение, чтобы оно покрывало весь экран */
+        background-position: center; /* располагает изображение по центру */
+      }
+      table {
+        width: 80%;
+        border-collapse: collapse;
+        margin: 10px 0;
+        font-size: 14px;
+        text-align: left;
+
+        border-radius: 22px;
+        background-color: transparent;
+      }
+      table th,
+      table td {
+        padding: 8px;
+        border: none;
+      }
+
+      td:not(:first-child),
+      th:not(:first-child) {
+        border-left: 1px solid black; /* Вертикальные линии */
+      }
+
+      tr:not(:last-child) td,
+      tr:not(:last-child) th {
+        border-bottom: 1px solid black; /* Горизонтальные линии */
+      }
+
+      td:nth-child(1),
+      th:nth-child(1) {
+        border-left: none; /* Удаление левой границы у первой колонки */
+      }
+      h1 {
+        font-size: 18px;
+        border-radius: 5px;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Задолжность (Автомобиль) </br>300 000 тыс. руб.</h1>
+    <table id="excel-table">
+      <thead>
+        <tr>
+          <th>Дата</th>
+          
+          <th>Обоснование</th>
+          <th>Сумма руб.</th>
+          <th>Остаток руб.</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">9.02.24г.</th>
+          <td>Прямой возврат</td>
+          <td>-40 000</td>
+          <td>260 000</td>
+        </tr>
+        <tr>
+          <th scope="row">04.04.24г.</th>
+          <td>Прямой возврат</td>
+          <td>-5 000</td>
+          <td>255 000</td>
+        </tr>
+        <tr>
+          <th scope="row">20.06.24г.</th>
+          <td>тройник, сгон, обводное колено, фомка, 397-правило, 633-грунтовка 5л.</td>
+          <td>-2 180</td>
+          <td>252 820</td>
+        </tr>
+        <tr>
+          <th scope="row">22.06.24г.</th>
+          <td>венчик, шпатель, уровень, кельна штукатура</td>
+          <td>-2 146</td>
+          <td>250 704</td>
+        </tr>
+        <tr>
+          <th scope="row">16.07.24г.</th>
+          <td>шпаклевка</td>
+          <td>-3 905</td>
+          <td>246 799</td>
+        </tr>
+        <tr>
+          <th scope="row">03.08.24г.</th>
+          <td>миксер, ведро для строительных работ</td>
+          <td>-388</td>
+          <td>246 411</td>
+        </tr>
+        <tr>
+          <th scope="row">12.08.24г.</th>
+          <td>сковородка</td>
+          <td>-1 499</td>
+          <td>244 420</td>
+        </tr>
+        <tr>
+          <th scope="row">20.08.24г.</th>
+          <td>Шнур с электровилкой с ключателем 1,7м Патрон Изолента 15мм×10м (зеленая) Вентиляционная решетка )</td>
+          <td>-492</td>
+          <td>244 420</td>
+        </tr>
+        <tr>
+          <th scope="row">31.08.24г.</th>
+          <td>Сифон под раковину</td>
+          <td>-410,78</td>
+          <td>244 409,22</td>
+        </tr>
+        <tr>
+          <th scope="row">05.09.24г.</th>
+          <td>Прямой возврат</td>
+          <td>-4 409.22</td>
+          <td>240 000</td>
+        </tr>
+        
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+      </tbody>
+    </table>
+
+    
+  </body>
+</html>
