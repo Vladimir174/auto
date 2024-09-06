@@ -56,49 +56,87 @@
       <thead>
         <tr>
           <th>Дата</th>
+          
           <th>Обоснование</th>
           <th>Сумма руб.</th>
           <th>Остаток руб.</th>
         </tr>
       </thead>
       <tbody>
-        <!-- Данные из Excel будут вставлены сюда -->
+        <tr>
+          <th scope="row">9.02.24г.</th>
+          <td>Прямой возврат</td>
+          <td>-40 000</td>
+          <td>260 000</td>
+        </tr>
+        <tr>
+          <th scope="row">04.04.24г.</th>
+          <td>Прямой возврат</td>
+          <td>-5 000</td>
+          <td>255 000</td>
+        </tr>
+        <tr>
+          <th scope="row">20.06.24г.</th>
+          <td>тройник, сгон, обводное колено, фомка, 397-правило, 633-грунтовка 5л.</td>
+          <td>-2 180</td>
+          <td>252 820</td>
+        </tr>
+        <tr>
+          <th scope="row">22.06.24г.</th>
+          <td>венчик, шпатель, уровень, кельна штукатура</td>
+          <td>-2 146</td>
+          <td>250 704</td>
+        </tr>
+        <tr>
+          <th scope="row">16.07.24г.</th>
+          <td>шпаклевка</td>
+          <td>-3 905</td>
+          <td>246 799</td>
+        </tr>
+        <tr>
+          <th scope="row">03.08.24г.</th>
+          <td>миксер, ведро для строительных работ</td>
+          <td>-388</td>
+          <td>246 411</td>
+        </tr>
+        <tr>
+          <th scope="row">12.08.24г.</th>
+          <td>сковородка</td>
+          <td>-1 499</td>
+          <td>244 420</td>
+        </tr>
+        <tr>
+          <th scope="row">20.08.24г.</th>
+          <td>Шнур с электровилкой с ключателем 1,7м Патрон Изолента 15мм×10м (зеленая) Вентиляционная решетка )</td>
+          <td>-492</td>
+          <td>244 420</td>
+        </tr>
+        <tr>
+          <th scope="row">31.08.24г.</th>
+          <td>Сифон под раковину</td>
+          <td>-410,78</td>
+          <td>244 409,22</td>
+        </tr>
+        <tr>
+          <th scope="row">05.09.24г.</th>
+          <td>Прямой возврат</td>
+          <td>-4 409.22</td>
+          <td>240 000</td>
+        </tr>
+        
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
       </tbody>
     </table>
 
-    <!-- Подключаем библиотеку SheetJS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
-    <script>
-      // Функция для загрузки Excel файла из того же каталога
-      function loadExcelFile() {
-        fetch("sample_data.xlsx") // Замените на имя вашего файла Excel
-          .then((response) => response.arrayBuffer())
-          .then((data) => {
-            const workbook = XLSX.read(data, { type: "array" });
-            const firstSheet = workbook.Sheets[workbook.SheetNames[0]];
-            const jsonData = XLSX.utils.sheet_to_json(firstSheet);
-
-            const tbody = document.querySelector("#excel-table tbody");
-            tbody.innerHTML = ""; // Очищаем таблицу перед вставкой новых данных
-
-            jsonData.forEach((row) => {
-              const tr = document.createElement("tr");
-              tr.innerHTML = `
-                            <td>${row["Дата"]}</td>
-                            <td>${row["Обоснование"]}</td>
-                            <td>${row["Сумма"]}</td>
-                            <td>${row["Остаток"]}</td>
-                        `;
-              tbody.appendChild(tr);
-            });
-          })
-          .catch((error) => {
-            console.error("Ошибка загрузки Excel файла:", error);
-          });
-      }
-
-      // Загружаем Excel файл при открытии страницы
-      window.onload = loadExcelFile;
-    </script>
+    
   </body>
 </html>
