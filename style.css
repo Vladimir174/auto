@@ -1,0 +1,51 @@
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 5px 0;
+  font-size: 14px;
+  text-align: left;
+
+  border-radius: 22px;
+  background-color: transparent;
+}
+table th,
+table td {
+  padding: 6px;
+  border: none;
+}
+
+td:not(:first-child),
+th:not(:first-child) {
+  border-left: 1px solid #d4d4d4; /* Вертикальные линии */
+}
+
+tr:not(:last-child) td,
+tr:not(:last-child) th {
+  border-bottom: 1px solid #d4d4d4; /* Горизонтальные линии */
+}
+
+td:nth-child(1),
+th:nth-child(1) {
+  border-left: none; /* Удаление левой границы у первой колонки */
+}
+h1 {
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.mainDiv {
+  align-content: center;
+}
