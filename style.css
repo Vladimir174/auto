@@ -5,20 +5,16 @@ body {
   color: #555;
 
   display: flex;
-  justify-content: center;
-  align-items: center;
+
   height: 100vh;
-  margin: 10;
+  margin: 15;
   padding: 0;
 }
 table {
   width: 100%;
   border-collapse: collapse;
-  margin: 5px 0;
-  font-size: 14px;
+  font-size: 12px;
   text-align: left;
-
-  border-radius: 22px;
   background-color: transparent;
 }
 table th,
@@ -42,7 +38,7 @@ th:nth-child(1) {
   border-left: none; /* Удаление левой границы у первой колонки */
 }
 h1 {
-  font-size: 16px;
+  font-size: 14px;
   border-radius: 5px;
 }
 
