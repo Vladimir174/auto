@@ -37,8 +37,7 @@ th:nth-child(1) {
   border-left: none; /* Удаление левой границы у первой колонки */
 }
 h1 {
-  font-size: 14px;
-  border-radius: 5px;
+  padding-bottom: 3px;
 }
 
 .mainDiv {
