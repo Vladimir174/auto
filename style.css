@@ -43,3 +43,7 @@ h1 {
 .mainDiv {
   align-content: center;
 }
+
+.downLine {
+  border-bottom: solid 1px #555;
+}
