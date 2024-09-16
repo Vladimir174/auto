@@ -28,6 +28,7 @@ body {
 .title-items {
   display: flex;
   justify-content: space-between;
+  font-size: 14px;
 }
 
 .title-box {
@@ -35,12 +36,12 @@ body {
   width: 100%;
   color: #000000;
   font-family: "Times New Roman", Times, serif;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
   margin-bottom: 5px;
   padding-bottom: 5px;
 }
 
 h1 {
-  font-size: 26px;
+  font-size: 18px;
 }
