@@ -51,11 +51,11 @@ h1 {
 }
 
 .btmHistory {
-  border: solid 2px #d1d1d1;
+  border: 0;
   width: 100%;
   height: 2rem;
   border-radius: 0.3rem;
-  background-color: white;
+  background-color: rgb(221, 221, 221);
   margin-bottom: 15px;
 }
 
