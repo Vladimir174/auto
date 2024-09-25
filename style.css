@@ -6,24 +6,22 @@ html {
   flex-direction: column;
   background-color: black;
   color: white;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 400;
   font-size: 12px;
+}
 
 header {
   background: #000000;
-  
+
   background-size: 100%;
   background-position: 60% 40%;
-  
-
 }
 
 h4 {
   margin: 10px;
   font-size: 14px;
   padding: 0px 5px 0px 5px;
-
 }
 
 main {
@@ -48,10 +46,10 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  
+
   padding: 10px;
   text-align: center;
-  
+
   z-index: 1000; /* Обеспечивает отображение элемента поверх других элементов */
 }
 
